@@ -59,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int tag=Integer.valueOf(v.getTag().toString());
         String path="";
         textView.setText(path);
+
         switch (tag){
             case 1:
                 path=Environment.getExternalStorageDirectory().getAbsolutePath();
