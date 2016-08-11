@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if (btn instanceof Button){
                         btn.setOnClickListener(this);
                         Log.e("TAG:",btn.getTag().toString());
+                        ///asdasdasddasdasd
                     }
                 }
             }
