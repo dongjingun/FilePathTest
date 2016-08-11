@@ -20,7 +20,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView textView;
     LinearLayout rootView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         initView();
     }
-
     private void initView() {
         for (int i=0;i<rootView.getChildCount();i++){
                 View linear=rootView.getChildAt(i);
