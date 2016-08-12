@@ -6,6 +6,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.telephony.PhoneNumberUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.Menu;
@@ -15,8 +16,8 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.ArrayList;
 
+import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView textView;
     LinearLayout rootView;
@@ -36,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         .setAction("Action", null).show();
             }
         });
-
         initView();
     }
     private void initView() {
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     if (btn instanceof Button){
                         btn.setOnClickListener(this);
                         Log.e("TAG:",btn.getTag().toString());
-                        ///asdasdasddasdasd
+                        //
                     }
                 }
             }
