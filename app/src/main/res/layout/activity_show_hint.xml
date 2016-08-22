@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:id="@+id/firstLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+    <ImageView
+            android:id="@+id/firstImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"/>
+     <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:gravity="left"
+             android:text="Click me"
+             android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/hiddenView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="#b972ce"
+            android:visibility="gone"
+            >
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_launcher"/>
+        <TextView
+                android:id="@+id/tv_hindden"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text=" I am Hidden"
+                android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#993542">
+
+    </LinearLayout>
+</LinearLayout>

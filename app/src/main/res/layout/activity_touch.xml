@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.example.admin.filepathtest.widget.ARelativeLayout
+            android:id="@+id/aRelative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#c7b5b8">
+        <com.example.admin.filepathtest.widget.BRelativeLayout
+                android:id="@+id/bRelative"
+                android:layout_width="200sp"
+                android:layout_height="200dp"
+                android:background="#1fcfae"
+
+       >
+            <com.example.admin.filepathtest.widget.myView
+                    android:id="@+id/btn"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+
+                    android:layout_centerVertical="true"/>
+        </com.example.admin.filepathtest.widget.BRelativeLayout>
+        <TextView
+                android:id="@+id/logText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bRelative"
+                android:textSize="14dp"
+                android:text=""/>
+    </com.example.admin.filepathtest.widget.ARelativeLayout>
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:id="@+id/reset"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="42dp"
+            android:layout_marginEnd="42dp"/>
+
+</RelativeLayout>

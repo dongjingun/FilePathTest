@@ -120,6 +120,7 @@ public class RegexUtils {
 	 * @return
 	 */
 	public static boolean isZipCode(String string){
+
 		return string.matches(ZIP_CODE);
 	}
 	
